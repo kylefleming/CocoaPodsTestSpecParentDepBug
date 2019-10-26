@@ -1,0 +1,60 @@
+{
+  "name": "Test",
+  "authors": "Kyle Fleming",
+  "homepage": "https://github.com/kylefleming/CocoaPodsTestSpecParentDepBug",
+  "summary": "Test",
+  "version": "0.0.1",
+  "source": {
+    "path": "."
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "Sources/Core.swift",
+      "testspecs": [
+        {
+          "name": "Tests",
+          "test_type": "unit",
+          "source_files": "Tests/CoreTests.swift",
+          "dependencies": {
+            "Quick": [
+
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Rx",
+      "source_files": "Sources/Rx.swift",
+      "dependencies": {
+        "Test/Core": [
+
+        ],
+        "RxSwift": [
+          "~> 5.0"
+        ]
+      },
+      "testspecs": [
+        {
+          "name": "Tests",
+          "test_type": "unit",
+          "source_files": "Tests/RxTests.swift",
+          "dependencies": {
+            "Quick": [
+
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "swift_version": "5.0"
+}

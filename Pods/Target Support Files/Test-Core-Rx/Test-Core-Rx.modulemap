@@ -1,0 +1,6 @@
+framework module Test {
+  umbrella header "Test-Core-Rx-umbrella.h"
+
+  export *
+  module * { export * }
+}

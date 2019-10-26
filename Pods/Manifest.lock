@@ -1,0 +1,37 @@
+PODS:
+  - Quick (2.2.0)
+  - RxSwift (5.0.0)
+  - Test/Core (0.0.1)
+  - Test/Core/Tests (0.0.1):
+    - Quick
+  - Test/Rx (0.0.1):
+    - RxSwift (~> 5.0)
+    - Test/Core
+  - Test/Rx/Tests (0.0.1):
+    - Quick
+    - RxSwift (~> 5.0)
+    - Test/Core
+
+DEPENDENCIES:
+  - Test/Core (from `.`)
+  - Test/Core/Tests (from `.`)
+  - Test/Rx (from `.`)
+  - Test/Rx/Tests (from `.`)
+
+SPEC REPOS:
+  trunk:
+    - Quick
+    - RxSwift
+
+EXTERNAL SOURCES:
+  Test:
+    :path: "."
+
+SPEC CHECKSUMS:
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  Test: bac4fd927d299d934854d394f91b8956894e98cd
+
+PODFILE CHECKSUM: a8b0ea8a2bb1fa5f6d45763b09f1bc40c504516a
+
+COCOAPODS: 1.8.4
